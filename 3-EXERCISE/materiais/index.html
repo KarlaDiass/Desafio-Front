@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário de Avaliação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+</head>
+
+<body>
+
+    <nav>
+        <button id="myBtn" class="btn">Abrir Formulário</button>
+    </nav>
+
+    <main id="myModal">
+        <div class="content">
+            <span class="close">&times;</span>
+            <h1 class="title">DEIXE SUA AVALIAÇÃO</h1>
+            <form id="form">
+                <div class="form-group">
+                    <label>Escreva seu nome:</label>
+                    <input type="text" id="name" required/>
+                </div>
+
+                <div class="form-group">
+                    <label>Adicione sua nota:</label>
+                    <div id="rating">
+                        <span data-value="1" class="rate fa fa-star"></span>
+                        <span data-value="2" class="rate fa fa-star"></span>
+                        <span data-value="3" class="rate fa fa-star"></span>
+                        <span data-value="4" class="rate fa fa-star"></span>
+                        <span data-value="5" class="rate fa fa-star"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Alguma observação?</label>
+                    <textarea id="message"></textarea>
+                </div>
+
+                <button id="sendFeedback" class="btn" submit>Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    
+</body>
+
+</html>
